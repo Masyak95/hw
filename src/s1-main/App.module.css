@@ -1,0 +1,14 @@
+.App {
+    --header_height: 60px;
+}
+
+.hw {
+display: flex;
+    flex-direction: column;
+    padding: 20px 0 ;
+}
+
+.hwTitle {
+display: flex;
+    padding: 20px 0 ;
+}

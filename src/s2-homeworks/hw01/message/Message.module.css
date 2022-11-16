@@ -1,0 +1,46 @@
+.message {
+}
+
+.imageAndText {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: 10px;
+  align-items: flex-end;
+}
+
+.imageAndText img {
+    width: 48px;
+}
+
+.text {
+    background: #0066cc;
+    width: 528px;
+    padding: 20px;
+border-radius: 15px 15px 0 15px;
+    max-width: calc(100% - 67px);
+position: relative;
+}
+
+.text:after {
+
+}
+.triangle{
+
+}
+
+.name {
+position: absolute;
+    top: 2px;
+    right: 10px;
+}
+
+.messageText {
+    white-space: normal;
+    word-wrap: break-word;
+}
+
+.time {
+position: absolute;
+    /*bottom: 10px;*/
+    right: 10px;
+}
