@@ -57,6 +57,7 @@ const HW1 = () => {
             <div className={s2.hw}>
                 {/*проверка отображения (не менять)*/}
                 <div>
+
                     <Message message={message0} />
                     <FriendMessage message={friendMessage0} />
                 </div>
