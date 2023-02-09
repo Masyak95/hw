@@ -13,40 +13,40 @@ import avatar from './avatar.png'
 * 5 - сделать стили в соответствии с дизайном
 * */
 
-// нужно создать правильный тип вместо any
 export type MessageType = {
-    id: number
-    user: {
-        name:string
+    id:number
+    user:{
         avatar:string
-    },
-    message: {
-        text: string
-        time: string
-    },
+        name: string
+    }
+    message:{
+        text:string
+        time:string
+
+    }
 }
 
 // структуру объекта не менять
 export const message0: MessageType = {
     id: 0,
     user: {
-        avatar: avatar, // можно менять
-        name: 'Some Name',  // можно менять
+        avatar: 'https://uznayvse.ru/images/catalog/2022/1/actress-amber-heard_16.jpg', // можно менять
+        name: 'Amber Heard',  // можно менять
     },
     message: {
-        text: 'some textsome textsome textsome textsome textsome textsome text', // можно менять
-        time: '22:00', // можно менять
+        text: 'my dog stepped on a bee', // можно менять
+        time: '09:01', // можно менять
     },
 }
 export const friendMessage0: MessageType = {
     id: 100,
     user: {
-        avatar: avatar, // можно менять
-        name: 'Friend Name', // можно менять
+        avatar: 'https://static.tvtropes.org/pmwiki/pub/images/johnny_depp_9.jpeg', // можно менять
+        name: 'Johny Depp', // можно менять
     },
     message: {
-        text: 'зеркальное сообщение для тренировки css', // можно менять
-        time: '22:00', // можно менять
+        text: 'OMG', // можно менять
+        time: '09:02', // можно менять
     },
 }
 
@@ -57,7 +57,6 @@ const HW1 = () => {
             <div className={s2.hw}>
                 {/*проверка отображения (не менять)*/}
                 <div>
-
                     <Message message={message0} />
                     <FriendMessage message={friendMessage0} />
                 </div>
