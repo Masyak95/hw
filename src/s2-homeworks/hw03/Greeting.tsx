@@ -30,7 +30,7 @@ const Greeting: React.FC<GreetingPropsType> = (
     return (
         <div id={'hw3-form'} className={s.greetingForm}>
             <div className={s.text}>
-                {'Людей добавили: '}
+                {'People have been added: '}
                 <span id={'hw3-users-total'}>
                     {totalUsers}
                 </span>
@@ -63,7 +63,7 @@ const Greeting: React.FC<GreetingPropsType> = (
 
             {lastUserName && (
                 <div className={s.greeting}>
-                    Привет <span id={'hw3-last-user'}>{lastUserName}</span>!
+                    Hi <span id={'hw3-last-user'}>{lastUserName}</span>!
                 </div>
             )}
         </div>
